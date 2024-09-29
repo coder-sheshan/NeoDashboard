@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-// Update the path if necessary
 import { FaSun, FaMoon } from "react-icons/fa";
 import useThemeStore from "../store/useThemestore";
 
@@ -7,7 +6,6 @@ const ToggleButton: React.FC = () => {
     const { theme, toggleTheme } = useThemeStore();
 
     useEffect(() => {
-        // Apply the theme to the body
         document.body.className = theme;
     }, [theme]);
 

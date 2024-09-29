@@ -34,7 +34,7 @@ const Header = ({ setIsOpen, isOpen }: {
                     <PopoverPanel
                         transition
                         className="absolute z-50 divide-y divide-white/5 rounded-xl bg-white/5 text-sm transition duration-200 ease-in-out"
-                        style={{ top: 50, right: 20 }} // Adjust position to appear below button
+                        style={{ top: 50, right: 20 }}
                     >
                         <ProfileMenu width={600} />
                     </PopoverPanel>

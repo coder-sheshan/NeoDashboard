@@ -15,13 +15,13 @@ import ToggleButton from "../components/toggle-theme";
 interface SidebarProps {
     isOpen: boolean;
     setIsOpen: (isOpen: boolean) => void;
-    activePage: string; // New prop for active page
+    activePage: string;
 }
 
 const Sidebar: React.FC<SidebarProps> = ({
     isOpen,
     setIsOpen,
-    activePage, // Get the active page
+    activePage,
 }) => {
     const menuItems = [
         { name: "Home", icon: <HomeIcon className="size-5 dark:text-white" /> },
@@ -70,7 +70,7 @@ const Sidebar: React.FC<SidebarProps> = ({
                             key={index}
                             name={item.name}
                             icon={item.icon}
-                            isActive={item.name === activePage} // Highlight active page
+                            isActive={item.name === activePage}
                         />
                     ))}
                 </ul>
@@ -81,7 +81,6 @@ const Sidebar: React.FC<SidebarProps> = ({
                     ))}
                 </ul>
             </div>
-
             {/* Place this at the bottom of the sidebar */}
             <div className="flex items-center dark:text-gray-400 p-2 mx-2 gap-3 text-sm">
                 <ToggleButton /> Theme

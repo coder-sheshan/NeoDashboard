@@ -6,7 +6,7 @@ export type Order = {
   customer: string;
   event: string;
   amount: string;
-  image: string; // since the image is a string path
+  image: string;
 };
 
 
