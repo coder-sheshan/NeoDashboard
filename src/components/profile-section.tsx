@@ -9,7 +9,7 @@ const ProfileSection = () => {
         <Popover>
             <PopoverButton
                 type="button"
-                className="relative items-center hidden gap-3 p-4 border-t lg:flex profile-section dark:text-gray-500 border-slate-800"
+                className="relative items-center     gap-3 p-4 border-t flex profile-section dark:text-gray-500 border-slate-800"
                 id="dropdownDefaultButton"
             >
                 <img

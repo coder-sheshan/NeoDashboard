@@ -50,7 +50,7 @@ const Sidebar: React.FC<SidebarProps> = ({
 
     return (
         <aside
-            className={`fixed top-0 left-0 z-40 w-64 h-screen flex flex-col transition-transform ${isOpen ? "translate-x-0" : "-translate-x-full"} lg:translate-x-0`}
+            className={`fixed top-0 left-0 z-40 w-64 h-screen flex  bg-gray-50 dark:bg-zinc-950 flex-col transition-transform ${isOpen ? "translate-x-0" : "-translate-x-full"} lg:translate-x-0`}
         >
             <div className="relative flex-grow overflow-y-auto bg-gray-50 dark:bg-zinc-950">
                 <div className="flex items-center justify-between p-5 text-2xl text-gray-400 border-b dark:text-gray-500 border-slate-800">
@@ -64,7 +64,7 @@ const Sidebar: React.FC<SidebarProps> = ({
                     />
                 </div>
 
-                <ul className="px-3 py-4 font-medium ">
+                <ul className="px-3  py-0 md:py-4 font-medium ">
                     {menuItems.map((item, index) => (
                         <MenuItem
                             key={index}
